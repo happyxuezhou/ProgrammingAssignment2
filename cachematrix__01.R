@@ -34,3 +34,9 @@ cache_solve <- function(matrix_to_check, ...)
     matrix_to_check$set_inverse(matrix_store)
     matrix_store
 }
+
+xm <- make_matrix_vector(B)
+xm_1 <- cache_solve(xm)
+xm_1
+xm_2 <- cache_solve(xm)
+xm_2
